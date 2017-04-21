@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Read input from STDIN. Print output to STDOUT */  
+    int n,i,j;
+    char str[100000];
+    cin>>n;
+    for(i=0;i<n;i++)
+        {int count=0;
+        cin>>str;
+         j=1;
+        while(str[j]!='\0')
+             {
+             if(str[j]==str[j-1])
+                 count++;
+             j++;
+         }
+         cout<<count<<endl;
+    }
+    return 0;
+}
